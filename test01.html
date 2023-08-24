@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제1 회원가입</title>
+    <style>      
+   #aaa{
+    color: blue;
+   }
+   #bbb{
+    text-align: end;
+   }
+   #ccc{
+    font-size: 20px;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   }
+
+    </style>
+</head>
+<body>
+    <form action="join.jsp" name="frm" id="frm" method="get">
+    <table width="70%">
+        <tr bgcolor="skyblue">
+            <td colspan="3" id="ccc">☞아이디(ID)정보</td>    
+        </tr>
+        <tr >
+        <td bgcolor="yellow" id="bbb">*아이디</td>    
+        <td id="aaa">
+            <input type="text" id="id"><input type="submit" value="중복검사"><br>
+            (4~12자 영자/숫자 가능, 한글, 특수문자 ID는 사용할 수 없습니다.)
+        </form></td>  
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">*비밀번호</td>    
+        <td id="aaa"><input type="password">(4~8자 이내로 만들어 주세요)</td>
+         
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">*비밀번호 확인</td>    
+        <td id="aaa"><input type="password">(위 번호와 같이 입력해 주세요)</td>
+        
+    </tr>
+    <tr bgcolor="skyblue" width="1000">
+        <td colspan="3" id="ccc">☞개인정보</td>    
+       
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">*이름</td>    
+        <td id="aaa"><input type="text" name="name">(예:박정현)</td>
+        
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">생년월일</td>    
+        <td>
+            <label for="birth"></label>
+            <input type="date" name="birth" id="birth" min="2022-01-01" max="2023-10-31">
+            <input type="radio" name="p0" value="birth">
+        </td>
+          
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">*주소</td>    
+        <td colspan="2">
+            <input type="text">
+            <input type="button" value="확인">
+            <br>
+            <input type="text" >
+        </td>
+          
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">전화번호</td>    
+        <td>핸드폰
+            <input type="text">
+            <input type="radio" name="p1" value="phone">SKT
+            <input type="radio" name="p1" value="phone">KT
+            <input type="radio" name="p1" value="phone">LG
+        </td>
+           
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">이메일</td>    
+        <td><label for="mymail2">이메일</label>
+            <input type="email" name="myemail" id="mymail2" multiple required></td>
+           
+    </tr>
+    <tr >
+        <td bgcolor="yellow" id="bbb">가입인사</td>    
+        <td><textarea name="intro" rows="7" cols="50"
+            placeholder="자기소개를 100자 이내로 해주세요"></textarea></td>
+     
+    </tr>
+    </table>
+    <table width="60%" aling="right">
+        <tr>
+            <th>
+    <input type="button" value="확인" onclick="alert('안녕???')">
+            <input type="reset" value="다시쓰기" text-align="center">
+        </th>
+        </tr>
+        </table>
+
+        </form>
+
+        </body>
+</html>
